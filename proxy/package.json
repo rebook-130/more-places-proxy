@@ -1,0 +1,21 @@
+{
+  "name": "proxy",
+  "version": "",
+  "description": "A proxy to connect multiple components",
+  "author": "Andrew Vuong",
+  "license": "",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "http-proxy-middleware": "^1.0.5"
+  }
+}
