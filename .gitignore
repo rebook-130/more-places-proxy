@@ -24,3 +24,8 @@ coverage
 build/
 dist/
 
+# Other components
+calendar/
+more-places/
+reviews/
+photo-gallery/
