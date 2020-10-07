@@ -18,6 +18,11 @@ app.use('/api/rooms/:roomId', createProxyMiddleware({ target: `http://localhost:
 // More places
 app.use('/api/more_places', createProxyMiddleware({ target: `http://localhost:3004/`, changeOrigin: true}));
 app.use('/api/saved_lists', createProxyMiddleware({ target: `http://localhost:3004/`, changeOrigin: true}));
+app.use('/api/create_list', createProxyMiddleware({ target: `http://localhost:3004/`, changeOrigin: true}));
+app.use('/api/update_listing', createProxyMiddleware({ target: `http://localhost:3004/`, changeOrigin: true}));
+app.use('/api/update_collection', createProxyMiddleware({ target: `http://localhost:3004/`, changeOrigin: true}));
+app.use('/api/collection_name', createProxyMiddleware({ target: `http://localhost:3004/`, changeOrigin: true}));
+
 
 app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`);
