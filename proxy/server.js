@@ -22,3 +22,7 @@ app.use('/api/create_list', createProxyMiddleware({ target: `http://54.219.211.6
 app.use('/api/update_listing', createProxyMiddleware({ target: `http://54.219.211.68:3004/`, changeOrigin: true}));
 app.use('/api/update_collection', createProxyMiddleware({ target: `http://54.219.211.68:3004/`, changeOrigin: true}));
 app.use('/api/collection_name', createProxyMiddleware({ target: `http://54.219.211.68:3004/`, changeOrigin: true}));
+
+app.listen(port, () => {
+  console.log(`FEC app listening at port ${port}`);
+});
