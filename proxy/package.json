@@ -15,7 +15,6 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "http-proxy-middleware": "^1.0.5"
   }
 }
